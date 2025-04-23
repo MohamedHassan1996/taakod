@@ -24,7 +24,7 @@ class UserSeeder extends Seeder
         $user->name = 'Mohamed Hassan';
         $user->email = 'admin@admin.com';
         $user->password = 'Mans123456';
-        $user->is_active = UserStatus::ACTIVE;
+        $user->status = UserStatus::ACTIVE;
         $type = UserType::ADMIN;
         $user->email_verified_at = now();
         $user->phone = '1234567890';
