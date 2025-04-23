@@ -4,6 +4,7 @@ namespace App\Services\Auth;
 
 use App\Enums\ResponseCode\HttpStatusCode;
 use App\Enums\User\UserStatus;
+use App\Enums\User\UserType;
 use App\Helpers\ApiResponse;
 use App\Http\Resources\User\LoggedInUserResource;
 use Illuminate\Support\Facades\Hash;
@@ -20,6 +21,7 @@ class AuthService
             'phone' => $data['phone'],
             'password' => $data['password'],
             'status' => UserStatus::ACTIVE,
+            'type' => UserType::USER
         ]);
 
         // Generate a new token (DO NOT return it directly)
