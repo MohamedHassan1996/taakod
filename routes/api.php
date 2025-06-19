@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\V1\App\Auth\AuthController;
 use App\Http\Controllers\Api\V1\App\User\UserProfileController;
+use App\Http\Controllers\Api\V1\Dashboard\User\UserBackupController;
 
 // use App\Http\Controllers\Api\V1\Dashboard\User\UserController;
 // use App\Http\Controllers\Api\V1\Select\SelectController;
@@ -28,4 +29,9 @@ Route::prefix('v1')->group(function () {
     //     Route::get('', [SelectController::class, 'getSelects']);
     // });
 
+    // // User Backups
+    Route::controller(UserBackupController::class)->prefix('user-backups')->group(function () {
+        Route::put('','update');
+        Route::get('', 'show');
+    });
 });
