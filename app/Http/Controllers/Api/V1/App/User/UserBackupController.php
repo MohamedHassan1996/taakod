@@ -7,11 +7,11 @@ use App\Helpers\ApiResponse;
 use App\Http\Controllers\Controller;
 use App\Models\UserBackup;
 use App\Services\User\UserService;
-use Illuminate\Container\Attributes\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Routing\Controllers\HasMiddleware;
 use Illuminate\Routing\Controllers\Middleware;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 
 class UserBackupController extends Controller implements HasMiddleware
