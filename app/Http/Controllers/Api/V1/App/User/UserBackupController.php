@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Api\V1\Dashboard\User;
+namespace App\Http\Controllers\Api\V1\App\User;
 
 use App\Enums\ResponseCode\HttpStatusCode;
 use App\Helpers\ApiResponse;

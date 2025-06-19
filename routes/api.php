@@ -1,9 +1,9 @@
 <?php
 
+use App\Http\Controllers\Api\V1\App\User\UserBackupController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\V1\App\Auth\AuthController;
 use App\Http\Controllers\Api\V1\App\User\UserProfileController;
-use App\Http\Controllers\Api\V1\Dashboard\User\UserBackupController;
 
 // use App\Http\Controllers\Api\V1\Dashboard\User\UserController;
 // use App\Http\Controllers\Api\V1\Select\SelectController;
